@@ -1,0 +1,769 @@
+/*#373234
+#e8dccc
+#f3ec34
+#d84339*/
+@import url('https://fonts.googleapis.com/css?family=Dosis|Raleway&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.home {
+    overflow: hidden;
+    font-family: raleway, sans-serif;
+
+}
+
+.box1 {
+    background-color: #373234;
+    overflow: visible;
+    height: 100vh;
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+}
+
+.box1 h1 {
+    color: #e8dccc;
+    font-size: 4rem;
+    font-family: monospace;
+    text-align: right;
+    padding: 0;
+    align-self: flex-end;
+    padding-right: 10px;
+}
+
+.box2 {
+    display: flex;
+    background-color: #d84339;
+    margin: 0;
+    height: 100vh;
+    justify-content: flex-end;
+}
+
+h3 {
+    color: #e8dccc;
+    font-family: raleway, sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 1px 0.5px grey;
+    writing-mode: vertical-rl;
+    align-self: flex-end;
+    margin: 0 0 20px;
+    padding-right: 0.2rem;
+
+}
+
+.box2 {
+    display: grid;
+}
+
+.box2 nav {
+    padding-top: 20px;
+
+}
+
+.box2 nav ul {
+    display: block;
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+
+}
+
+.box2 nav ul li {
+    padding-bottom: 0.5rem;
+}
+
+.box2 nav ul li :hover {
+    text-decoration: none;
+    color: #e8dccc;
+
+}
+
+a {
+    color: #373234;
+}
+
+.hover {
+    opacity: 0;
+    font-size: 1.25rem;
+    padding-top: 10rem;
+    padding-left: 0.5rem;
+    transition: .5s ease-in-out;
+    height: 100vh;
+    font-family: 'Dosis', sans-serif;
+}
+
+.hover:hover {
+    opacity: 1;
+}
+
+.box3:hover {
+    background-color: #e8dccc;
+}
+
+.box3 {
+    background-image: url(./img/power.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: overlay;
+    height: 100vh;
+}
+
+
+.bars {
+    display: grid;
+    grid-template-columns: 40% 25% 30%;
+    grid-column-gap: 0.5rem;
+}
+
+@media (min-width:45rem) {
+    .bars {
+        grid-template-columns: 40% 20% 40%;
+        grid-column-gap: 1rem;
+    }
+
+    .box3 {
+        background-size: cover;
+        background-repeat: none;
+        background-position: right;
+    }
+
+    .hover {
+        font-size: 1.5rem;
+        opacity: 0;
+
+    }
+
+    .hover:hover {
+        opacity: 1;
+    }
+}
+
+@media (min-width:55rem) {
+    .bars {
+        grid-column-gap: 1.5rem;
+    }
+
+    .hover {
+        font-size: 2rem;
+        opacity: 0;
+    }
+
+    .hover:hover {
+        opacity: 1;
+    }
+
+    .box2 nav ul {
+
+        font-size: 1.25rem;
+        padding-right: 0.5rem;
+
+
+    }
+}
+
+/*----------------------------------------------------*/
+/*side navigation bar overlay transition*/
+
+/* The Overlay (background) */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(22, 20, 20, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #d84339;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Dosis', sans-serif;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #e8dccc;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------
+
+---------about page styling---------------*/
+.about a:hover {
+    color: #e8dccc;
+    text-decoration: none;
+}
+
+.about {
+    background-color: whitesmoke;
+}
+
+#myVideo {
+    width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1rem;
+    padding: 1rem;
+    font-family: raleway, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.menu {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: antiquewhite;
+    position: sticky;
+    background-color: #373234;
+    z-index: 2;
+    top: 0;
+}
+
+.about_1 {
+    display: grid;
+    background-color: #d84339;
+    height: 100%;
+    padding: 2rem;
+
+}
+
+.about_2 {
+    height: auto;
+    background-color: rgba(232, 220, 204, 0.5);
+
+}
+
+.about_3 {
+    display: grid;
+    background-color: #e8dccc;
+    height: 100%;
+    padding: 2rem;
+    text-align: left;
+}
+
+.about_3 h3 {
+    color: #d84339;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+/*-----------------------------------------------------------------------------*/
+@media (min-width:45rem) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/*UX PAGE STYLING*/
+.ux {
+    background-color: whitesmoke;
+    font-family: raleway, sans-serif;
+}
+
+.ux h1,
+.web h1 {
+    font-family: raleway, sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0;
+    text-shadow: 2px 2px gray;
+}
+
+.ux nav,
+.web nav {
+    background-color: #d84339;
+    margin: 0;
+    padding: 0px;
+}
+
+.ux nav ul,
+.web nav ul {
+    margin: 0px;
+    padding: 0.5rem;
+}
+
+.ux nav ul li,
+.web nav ul li {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5rem;
+
+}
+
+.active {
+    color: #e8dccc;
+}
+
+.ux nav ul li a:hover {
+    text-decoration: none;
+    color: #e8dccc;
+
+}
+
+.web nav ul li a:hover {
+    text-decoration: none;
+    color: #e8dccc;
+}
+
+.ux h3 {
+    padding: 1rem;
+    height: 100%;
+    align-self: flex-start;
+    background-color: #d84339;
+    margin-left: 3rem;
+}
+
+.project_1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background-color: whitesmoke;
+
+}
+
+.project_1 h4 {
+    color: #d84339;
+}
+
+.project_1 ol li {
+    color: #373234;
+    font-size: 0.75rem;
+    list-style-type: decimal;
+    padding-bottom: 1rem;
+
+}
+
+.project_1 div {
+    padding: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+
+}
+
+/*medium screen*/
+@media (min-width:45rem) {
+
+    .project_1 {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+
+    }
+
+    .project_1 div {
+        padding: 2rem;
+        text-align: justify;
+    }
+
+    .project_1 ol li {
+
+        font-size: 1rem;
+
+    }
+
+    .ux h3 {
+        padding: 2rem;
+    }
+
+    .ux h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .ux nav ul {
+        padding: 1rem;
+    }
+
+    .ux nav ul li {
+        display: inline-block;
+        font-size: 1.15rem;
+        padding-left: 1rem;
+
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        background-color: whitesmoke;
+    }
+
+}
+
+@media (min-width:55rem) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+}
+
+#page2 {
+    background-color: whitesmoke;
+
+}
+
+#page2 h4 {
+    color: #33b1b2;
+}
+
+#page2 h3 {
+    background-color: #71f79F;
+    color: #231942;
+}
+
+#page2 ol li {
+    color: #231942;
+}
+
+#page3 h4 {
+    color: #93dc4c;
+}
+
+#page3 h3 {
+    background-color: #e5a60d;
+    color: #231942;
+}
+
+#page3 ol li {
+    color: #7f5900;
+}
+
+/*-------------------------------------------------------------------------*/
+/*GRAPHIC PAGE STYLING*/
+
+.graphic_h1 {
+    font-family: raleway, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-shadow: 1px 1px gray;
+    background-color: #d84339;
+}
+
+.graphic_h1 a:hover {
+    text-decoration: none;
+    color: #e8dccc;
+}
+
+.graphic {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.graphic img {
+    border: 3px solid #373234;
+}
+
+h5 {
+    color: #373234;
+    text-align: center;
+    font-family: raleway, sans-serif;
+    padding: 1rem;
+    margin: 3rem 0 3rem 0;
+}
+
+.fa-angle-up {
+    bottom: 0px;
+    font-size: 2rem;
+    padding: 1rem;
+    float: right;
+    position: sticky;
+
+}
+
+@media (min-width:40rem) {
+    .graphic {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (min-width:55rem) {
+    .graphic {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding: 5rem;
+    }
+
+    h1 {
+        padding: 2rem;
+    }
+
+}
+
+.graphic2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+@media (min-width:40rem) {
+    .graphic2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem 10rem 1rem 10rem;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+CONTACT PAGE STYLING-*/
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+.c1 {
+    background-color: #d84339;
+    grid-column: 1/span 5;
+    grid-row: 1/ span 9;
+    padding: 0.5rem;
+}
+
+li a:hover {
+    text-decoration: none;
+}
+
+.c2 {
+    display: grid;
+    box-sizing: border-box;
+    grid-column: 2/ span 8;
+    grid-row: 3/ span 4;
+    background-color: #e8dccc;
+    z-index: 0;
+    border: 8px solid #d84339;
+    align-items: center;
+}
+
+.c2 ul {
+    font-family: raleway, sans-serif;
+    padding: 2rem;
+    font-size: 0.75rem;
+}
+
+.c2 ul li {
+    padding-bottom: 1rem;
+}
+
+.c2 li a:hover {
+    color: #d84339;
+}
+
+.c3 {
+    background-color: #e8dccc;
+    grid-column: 6/ span 10;
+    grid-row: 1/ span 9;
+}
+
+@media(min-width:40rem) {
+    .c1 {
+        padding: 1rem;
+    }
+
+    .c2 {
+        grid-column: 3/span 6;
+
+    }
+
+    .c2 ul {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:55rem) {
+    .c1 {
+        padding: 2rem;
+    }
+
+    .c2 {
+        grid-column: 4/ span 4;
+    }
+}
+
+/*------------------------WEB DESIGN PAGE STYLING-----------------------------------------------------------*/
+.web {
+    font-family: raleway, sans-serif;
+}
+
+.web_design {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: raleway, sans-serif;
+
+}
+
+.w1 {
+    background-color: whitesmoke;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 1rem;
+}
+
+.w1 img {
+    width: 100%;
+    border: 0.5px solid white;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.web_design h5 {
+    color: #373234;
+    font-size: 1rem;
+    padding-top: 2rem;
+    text-decoration: underline;
+}
+
+.web_design h5 a:hover {
+    color: #d84339;
+    ;
+
+}
+
+.web_design p {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 1rem;
+}
+
+@media (min-width:45rem) {
+    .w1 {
+        padding: 2rem;
+        grid-column-gap: 1.5rem;
+    }
+
+    .web_design p {
+        padding: 1.5rem;
+    }
+}
+
+@media(min-width:55rem) {
+    .w1 {
+        padding: 3rem;
+        grid-column-gap: 2rem;
+    }
+
+    .web_design p {
+        padding: 2rem;
+        font-size: 1rem;
+    }
+
+    .web_design h5 {
+        font-size: 1.5rem;
+    }
+}
+
+/*----------------Motion_graphic page styling-----------------------------------------------------------------------------------*/
+
+.row {
+    z-index: 1;
+}
+
+.video_tiles {
+    margin: 0 auto;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5rem;
+
+}
+
+.video_tiles:hover {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.video_tiles:hover .fa-play-circle {
+    opacity: 1;
+
+}
+
+.img-fluid {
+    position: relative;
+}
+.img-fluid:hover{
+    opacity: 0.5;
+}
+
+
+.fa-play-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: #000;
+    opacity: 0;
+
+}
+
+.modal-content {
+    background: transparent !important;
+    border: none !important;
+}
